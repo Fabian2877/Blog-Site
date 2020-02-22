@@ -1,0 +1,18 @@
+<%-include('partials/header') -%>
+
+<% newContent.forEach(function(postObject) { %>
+       <div class="container-fluid">
+        <h3> <%= postObject.newTitle %> </h3>
+        <p> <%= postObject.newMessage %> </p>
+    </div>
+
+<% })%> 
+ 
+
+
+
+
+
+
+
+<%-include('partials/footer') -%>
