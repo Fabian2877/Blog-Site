@@ -3,7 +3,7 @@
 <% newContent.forEach(function(postObject) { %>
        <div class="container-fluid">
         <h3> <%= postObject.newTitle %> </h3>
-        <p> <%= postObject.newMessage %> </p>
+        <p> <%= postObject.newMessage.substring(0, 102) + "..." %> <a href="/posts/<%=postObject.newTitle%>">Read More</a> </p>
     </div>
 
 <% })%> 

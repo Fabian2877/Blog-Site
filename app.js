@@ -48,7 +48,7 @@ app.get('/posts/:postName', function(req, res) {
 
     if(title === postRoute) {
 
-      res.render('fullPost', {fullPost: post})
+      res.render('post', {fullPost: post})
       console.log("Match Found!")
     } else {
       console.log("page not available")
